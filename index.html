@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/icons/Asset 4.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>            
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <div id="profilepicture">
+                <img class="round-img" src="images/profile-pic.jpg" />
+            </div>            
+            <h1>Vaibhav Beohar</h1>
+            <h2>Data Science | Software Engineering | Finance</h2>
+            <a href="docs/VaibhavBeohar_web_resume.pdf" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <p>Hi, I'm Vaibhav. I'm a hands-on technology professional with experience in software engineering (front-end and back-end), data science and finance & accounting. I'm an experienced practitioner with proven record in design, development and delivery of complex software systems and machine learning models.</p>
+
+                        <p>In my current role, I work as a Data Scientist. I have created and maintained supervised and unsupervised machine learnings models, including working on some interesting natural language processing use cases.</p>
+                        
+                        <p>I am also experienced in making data visualization dashboards using Tableau, D3.js, Javascript and jQuery and can create full-stack enterprise level websites with deep knowledge of data engineering pipelines, integrating back-end as well as front-end modules.</p>
+                         
+                        <p>I've also experienced deep involvement with the annual finance planning & budgeting cycles, month-end accounting close and FP&A processes, and have expertise of automating those tasks with Anaplan, a cloud based EPM software.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Select Projects</h2>
+        <div class="container">
+            <div class="row">
+
+                <div id="project-yolov4" class="row">
+                    <!-- Unbreak.info -->
+                    <div class="project shadow-large">
+                        <div class="col-sm-1 project-category">
+                            <p style="background: #c12779; color: white;">
+                                Data science capstone
+                            </p>
+                        </div>
+                        <div class="col-sm-4 project-image">
+                            <img src="images/makesense-min.png" width="50%" height="50%"/>
+                        </div>                        
+                        <!-- End .project-image -->
+                        <div class="col-sm-7 project-info" align="left">
+                            <h3>
+                                MakeSense - Twitch listener and sentiment analysis
+                            </h3>
+                            <p>
+                                Twitch is a live streaming service and global community 
+                                for content spanning gaming, entertainment, music, sports, 
+                                and more. As of August 2022, it had 9.2 million monthly streamers, 
+                                140 million active monthly users. Twitch's top streamers 
+                                earned over $30,000 a month from their streaming 
+                                and content channels on the site. 
+                            </p>
+                            <div id="more-unbreak">
+                            <p>
+                                Our capstone project titled "MakeSense" at UC Berkeley's MIDS coursework in fall 2022 attempted to  provide additional insights 
+                                to Twitch’s analytics by (1) interpreting chat behavior and running  sentiment analysis on livestream chats and scoring those chats 
+                                (2) translating performance metrics of Twitch streams into a scoring system and (3) allowing flexibility to customize content creation 
+                                to maximize growth in a single, or multiple areas.
+                            </p>
+                            <h4>Technical discussion</h4>
+                            <p>
+                                For an interactive and agile system as ours, we emphasized on a scalable data engineering pipeline to consume and process Twitch chats, 
+                                a BERT based masked language modeling Sentiment Classification layer and a jQuery/Ajax/D3.js based front-end. 
+                            </p>
+                            <p>
+                                We used two different sets of google cloud platform (GCP) instances: (a) GPU based instance to train to BERT NLP models and (b) a non-GPU instance 
+                                to host real time Twitch listener scripts along with the back-end webserver code. 
+                                On the GPU layer, We used a double-fine tuning Transfer Learning approach to train a Base-BERT model with masked language modeling Sentiment Classification 
+                                tasks using PyTorch and the Transformers library by Hugging Face.
+                            </p>
+                            <p>
+                                Finally, we used a combination of D3 library and bootstrap container layouts for our interactive plotting and visualization needs.
+                            </p>
+
+                                <div class="project-links">
+                                    <a href="/images/makesense_in_depth_pipeline.png"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox-unbreak lnk-blue"
+                                        >How it works
+                                        <i class="fa fa-cogs" aria-hidden="true"></i></a>|
+                                    <!-- <a
+                                        id="unbreak-video"
+                                        href="/resources/Communication_Unbreakdown-Open_Mic_Recording.mp4"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox3 lnk-blue"
+                                        >Watch a video
+                                        <i
+                                            class="fa fa-youtube-play"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </a>
+                                    <a
+                                        href="https://unbreak.info/case-study/overview"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox-unbreak lnk-blue"
+                                        >Read the case study
+                                        <i
+                                            class="fa fa-file-text-o"
+                                            aria-hidden="true"
+                                        ></i></a
+                                    >|
+                                    <a
+                                        href="https://unbreak.info/software/demo"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox-unbreak lnk-blue"
+                                        >Play with DARTS
+                                        <i
+                                            class="fa fa-bullseye"
+                                            aria-hidden="true"
+                                        ></i></a
+                                    >| -->
+                                    <a
+                                        class="lnk-blue"
+                                        target="_blank"
+                                        href="https://github.com/UCB-summer2022-TeamTwitch/Twitch-chat-pioneers"
+                                        >Check the github repo
+                                        <i
+                                            class="fa fa-sign-in"
+                                            aria-hidden="true"
+                                        ></i
+                                    ></a>
+                                </div>
+                                <div class="project-methods-and-tech">
+                                    <h5>TOOLS & METHODS</h5>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/bert.jpeg"/>
+                                        <span class="tooltiptext">BERT</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/bootstrap.jpeg"/>
+                                        <span class="tooltiptext">Bootstrap</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/python.png"/>
+                                        <span class="tooltiptext">Python</span>
+                                    </div>                                    
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/googlecloud.png"/>
+                                        <span class="tooltiptext">Google <br> Cloud Platform</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/jquery.png"/>
+                                        <span class="tooltiptext">jQuery</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/nlp.png"/>
+                                        <span class="tooltiptext">Natural <br> Language Processing</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/spacy.png"/>
+                                        <span class="tooltiptext">SpaCy</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/ajax.png"/>
+                                        <span class="tooltiptext">Ajax</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/rest_api.png"/>
+                                        <span class="tooltiptext">REST API</span>
+                                    </div>                                    
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/flask.png"/>
+                                        <span class="tooltiptext">Flask</span>
+                                    </div>                                    
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/d3.jpeg"/>
+                                        <span class="tooltiptext">D3.js</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/huggingface.png"/>
+                                        <span class="tooltiptext">HuggingFace</span>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                </div>
+
+
+
+                <div id="project-chloe" class="row">
+                    <!-- Unbreak.info -->
+                    <div class="project shadow-large">
+                        <div class="col-sm-1 project-category">
+                            <p style="background: #27c179; color: rgb(15, 1, 1);">
+                                Unsupervised natural language processing
+                            </p>
+                        </div>                   
+                        <div class="col-sm-4 project-image">
+                            <img src="images/icons/google_use.png" width="150%" height="150%"/>
+                        </div>                        
+
+
+                        <!-- End .project-image -->
+                        <div class="col-sm-7 project-info" align="left">
+                            <h3>Using Google Universal Sentence Encoder to perform classification by finding semantically similar media articles</h3>
+                            <p>
+                                Google's Universal Sentence Encoder encodes text into high dimensional vectors that 
+                                can be used for text classification, semantic similarity, clustering, and other natural language tasks.
+                            </p>
+                            <div id="more-unbreak">
+                                <p>
+                                    In this project, I used the pre-trained sentence transformer encoder based model from TensorFlow-Hub to create embedding vectors of a large corpus of 
+                                    text documents and then use those vectors to match with a set of queries thereby performing classification by finding semantically similar sentences.
+                                </p>
+                                <p>
+                                    The idea here was to download news media articles from Dow Jones, and then classify those documents to a set a service lines offered by the company. 
+                                    Each service line was annonated by a set of keywords. The keywords were also encoded into vectors using the sentence encoder model and matched to the 
+                                    media article vectors using cosine similarity. 
+
+                                    In this manner, we were able to classify most recent news articles to their specific "topics" and make informed decisions.
+                                </p>
+                                <div class="project-links">
+                                    <a
+                                        href="resources/use_de_pipeline.png"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox-unbreak lnk-blue"
+                                        >Data engineering pipeline
+                                        <i
+                                            class="fa fa-cogs"
+                                            aria-hidden="true"
+                                        ></i></a
+                                    >|
+                                    <a class="lnk-blue" target="_blank" href="resources/use_workflow.png">Workflow details
+                                        <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                </div>
+
+
+                                <div class="project-methods-and-tech">
+                                    <h5>TOOLS & METHODS</h5>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/aws_s3.png"/>
+                                        <span class="tooltiptext">AWS</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/snowflake.png"/>
+                                        <span class="tooltiptext">Snowflake</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/python.png"/>
+                                        <span class="tooltiptext">Python</span>
+                                    </div>                                    
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/unsupervisedml.jpeg"/>
+                                        <span class="tooltiptext">Unsupervised ML</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/multithreading_icon.png"/>
+                                        <span class="tooltiptext">Multithreaded <br> data pipelines</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/tensorflow.png"/>
+                                        <span class="tooltiptext">TensorFlow</span>
+                                    </div>
+                                </div>
+                                
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                </div>
+
+
+
+
+
+                <div id="project-yolov4" class="row">
+                    <!-- Unbreak.info -->
+                    <div class="project shadow-large">
+                        <div class="col-sm-1 project-category">
+                            <p style="background: #5d27c1; color: white;">
+                                Deep learning and computer vision
+                            </p>
+                        </div>
+                        <!-- End .project-category-image -->
+                        <!-- <div class="col-sm-4 project-image">
+                            <img class="round-img" src="images/makesense-min.png" />
+                        </div> -->
+                        <div class="col-sm-4 project-image">
+                            <img src="images/icons/yolov4.png" width="60%" height="60%"/>
+                        </div>                        
+
+                        <!-- End .project-image -->
+                        <div class="col-sm-7 project-info" align="left">
+                            <h3>
+                                An end-to-end bird detection pipeline using Yolo v4 and Keras
+                            </h3>
+                            <p>
+                                In our final project for the deep learning on the edge (w251) course at Berkeley, we developed a model to identify the presence and species of backyard birds.
+                                We constructed a compact model for rational edge deployment using Yolov4 Darknet model and fine tuned it on a large dataset of most common 700 species of birds found in North America (NABirds database by allaboutbirds.com)
+                            </p>
+                            <div id="more-unbreak">
+                                <p>
+                                    We narrowed the Yolo model training to 15 most common species in New England, Mid-Atlantic and North West for our training dataset. The dataset preloaded with Bounding Boxes - which proved to be an excellent time saver for training neural nets such as Yolo! 
+                                </p>
+                                <h4>Technical discussion</h4>
+                                <p>
+                                    We used CudNN with half precision on a V100 GPU instance on the IBM cloud for training our Yolov4 model. We took approximately 118.6 hours for the entire model training. 
+                                    We used Keras with TensorFlow for inference of model results. For this, we converted the YoloV4 weights to .h5 for use in Keras and for simplicity of deploying the final model on a Cubietruck 3 edge device. 
+                                </p>
+                                <p>
+                                    We used OpenCV in combination with Keras (Tensorflow in the backend) to read image streams, and then used the converted Yolov4 model weights from training to make predictions
+                                </p>
+                                <p>
+                                    Our final output was a text file for all birds that were detected by the model along with their species and a model accuracy prediction number. 
+                                </p>                                
+                                <div class="project-links">
+                                    <a href="images/w251_birdnet.png"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox-unbreak lnk-blue"
+                                        >How it works
+                                        <i class="fa fa-cogs" aria-hidden="true"></i></a>|
+                                    <!-- <a
+                                        id="unbreak-video"
+                                        href="/resources/Communication_Unbreakdown-Open_Mic_Recording.mp4"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox3 lnk-blue"
+                                        >Watch a video
+                                        <i
+                                            class="fa fa-youtube-play"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </a>
+                                    <a
+                                        href="https://unbreak.info/case-study/overview"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox-unbreak lnk-blue"
+                                        >Read the case study
+                                        <i
+                                            class="fa fa-file-text-o"
+                                            aria-hidden="true"
+                                        ></i></a
+                                    >|
+                                    <a
+                                        href="https://unbreak.info/software/demo"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox-unbreak lnk-blue"
+                                        >Play with DARTS
+                                        <i
+                                            class="fa fa-bullseye"
+                                            aria-hidden="true"
+                                        ></i></a
+                                    >| -->
+                                    <a
+                                        class="lnk-blue"
+                                        target="_blank"
+                                        href="https://github.com/wadeholmes-mids/w251_finalproject"
+                                        >Check the github repo
+                                        <i
+                                            class="fa fa-sign-in"
+                                            aria-hidden="true"
+                                        ></i
+                                    ></a>
+                                </div>
+                                <div class="project-methods-and-tech">
+                                    <h5>TOOLS & METHODS</h5>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/nvidia.png"/>
+                                        <span class="tooltiptext">NVidia V100</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/yolo.png"/>
+                                        <span class="tooltiptext">Yolov4</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/python.png"/>
+                                        <span class="tooltiptext">Python</span>
+                                    </div>                                    
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/ibm.png"/>
+                                        <span class="tooltiptext">IBM Cloud</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/keras_tf.jpeg"/>
+                                        <span class="tooltiptext">Keras + TF</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/makefile.png"/>
+                                        <span class="tooltiptext">MakeFile</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/opencv.png"/>
+                                        <span class="tooltiptext">OpenCV</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                </div>
+
+
+
+
+                <div id="project-absa" class="row">
+                    <!-- Unbreak.info -->
+                    <div class="project shadow-large">
+                        <div class="col-sm-1 project-category">
+                            <p style="background: #27c174; color: rgb(15, 1, 1);">
+                                Natural language processing
+                            </p>
+                        </div>
+                        <!-- End .project-category-image -->
+                        <!-- <div class="col-sm-4 project-image">
+                            <img class="round-img" src="images/makesense-min.png" />
+                        </div> -->
+                        <div class="col-sm-4 project-image">
+                            <img src="images/icons/absa-bert.png" width="90%" height="95%"/>
+                        </div>                        
+
+                        <!-- End .project-image -->
+                        <div class="col-sm-7 project-info" align="left">
+                            <h3>Aggregation is Not All You Need</h3>
+                            <p>
+                                Generalizing improvements in Aspect-Based Sentiment Analysis using SpanBERT, RoBERTa and BaseBERT models.
+                            </p>
+                            <div id="more-unbreak">
+                                <p>
+                                    In this project, we delved deeper into the under-explored, yet key subfield of sentiment analysis - Aspect Based Sentiment Analysis (ABSA). 
+                                    We examined a recent paper by Karimi et al (2021) and hypothesized that changes to their architecture could still yield equivalent (or even enhanced) results. 
+                                    In addition we also hypothesized that switching the underlying pre-trained BERT model to a more enhanced and task specific BERT (such as SpanBERT), could produce better results.
+
+                                </p>
+                                <div class="project-links">
+                                    <a
+                                        href="resources/ABSA_W266_FALL2021_MIDS.pdf"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox-unbreak lnk-blue">Read the final paper
+                                        <i class="fa fa-cogs" aria-hidden="true"></i></a>|
+                                    <a
+                                        class="lnk-blue"
+                                        target="_blank"
+                                        href="https://github.com/vbeohar/BERT-for-ABSA-Generalized-UCBerkeley.git"
+                                        >Check the github repo
+                                        <i
+                                            class="fa fa-sign-in"
+                                            aria-hidden="true"
+                                        ></i
+                                    ></a>
+                                </div>
+
+                                <div class="project-methods-and-tech">
+                                    <h5>TOOLS & METHODS</h5>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/bert.jpeg"/>
+                                        <span class="tooltiptext">BERT</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/huggingface.png"/>
+                                        <span class="tooltiptext">HuggingFace</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/python.png"/>
+                                        <span class="tooltiptext">Python</span>
+                                    </div>                                    
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/overleaf.png"/>
+                                        <span class="tooltiptext">Overleaf</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/nlp.png"/>
+                                        <span class="tooltiptext">NLP</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/sentimentanalysis.jpeg"/>
+                                        <span class="tooltiptext">Sentiment Analysis</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/supervisedml.webp"/>
+                                        <span class="tooltiptext">Supervised ML</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                </div>
+
+
+
+                <div id="project-d3" class="row">
+                    <!-- Unbreak.info -->
+                    <div class="project shadow-large">
+                        <div class="col-sm-1 project-category">
+                            <p style="background: #c12793; color: rgb(15, 1, 1);">
+                                Data visualization using D3.js
+                            </p>
+                        </div>
+                        <!-- End .project-category-image -->
+                        <!-- <div class="col-sm-4 project-image">
+                            <img class="round-img" src="images/makesense-min.png" />
+                        </div> -->
+                        <div class="col-sm-4 project-image">
+                            <!-- <img src="images/icons/starwars_d3.png" width="160%" height="160%"/> -->
+                            <!-- <embed type="image/svg+xml" src="images/icons/starwars_d3.svg" /> -->
+                            <!-- <svg width="100%" height="100%" viewBox="0 0 102 102">
+                                <embed type="image/svg+xml" src="images/icons/starwars_d3.svg" /> -->
+                                <!-- <rect x="1" y="1" width="100" height="100" stroke="black" stroke-width="2" fill="white"/>
+                                <text fill="black" x="10" y="30">FooBarBaz</text> -->
+                            <!-- </svg> -->
+                            <img src="images/icons/starwars_d3.png" width="100%" height="200%"/>
+                        </div>                        
+
+                        <!-- End .project-image -->
+                        <div class="col-sm-7 project-info" align="left">
+                            <h3>Visualizing Star Wars characters and their interactions using D3.js graphs</h3>
+                            <p>
+                                In this project we used D3-Force library to visualize and simulate Star Wars interactions. The D3 library creates “physical simulation of charged particles to generate a network layout”
+                            </p>
+                            <div id="more-unbreak">
+                                <p>
+                                    For the visualization, we used a dataset with node and link annotations for each episode. 
+                                    This included: Social network with links between characters defined by characters speaking in the same scene. 
+                                    Social network with links between characters defined by the number of times they are mentioned in the same scene 
+                                    Social network with character links and mentions for all 6 episodes
+                                </p>
+                                <p>
+                                    Overall, we aimed to help understand the “social network” of the Star Wars franchise and answer questions related to character interactions and importance.
+                                </p>
+                                <div class="project-links">
+                                    <a
+                                        href="resources/D3-Force_W209_Final_Presentation.pdf"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox-unbreak lnk-blue"
+                                        >Read the final presentation
+                                        <i
+                                            class="fa fa-cogs"
+                                            aria-hidden="true"
+                                        ></i></a
+                                    >|
+                                    <a
+                                        id="unbreak-video"
+                                        href="https://www.youtube.com/watch?v=bJVJ_7CRgms"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox3 lnk-blue"
+                                        >Watch a video
+                                        <i
+                                            class="fa fa-youtube-play"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </a>|
+                                    <a
+                                        href="https://observablehq.com/@vbeohar/star-wars-visualization-with-network-metrics"
+                                        data-width="1000px"
+                                        data-height="700px"
+                                        class="glightbox-unbreak lnk-blue"
+                                        >Play with D3-Force
+                                        <i
+                                            class="fa fa-bullseye"
+                                            aria-hidden="true"
+                                        ></i></a
+                                    >|
+                                    <a
+                                        class="lnk-blue"
+                                        target="_blank"
+                                        href="https://github.com/vbeohar/w209-spring2022-final-proj.git"
+                                        >Check the github repo
+                                        <i
+                                            class="fa fa-sign-in"
+                                            aria-hidden="true"
+                                        ></i
+                                    ></a>
+                                </div>
+
+
+                                <div class="project-methods-and-tech">
+                                    <h5>TOOLS & METHODS</h5>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/googlebert.png"/>
+                                        <span class="tooltiptext">BERT</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/bootstrap.jpeg"/>
+                                        <span class="tooltiptext">Bootstrap</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/python.png"/>
+                                        <span class="tooltiptext">Python</span>
+                                    </div>                                    
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/googlecloud.png"/>
+                                        <span class="tooltiptext">Google <br> Cloud Platform</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/jquery.png"/>
+                                        <span class="tooltiptext">jQuery</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/nlp.png"/>
+                                        <span class="tooltiptext">Natural <br> Language Processing</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/spacy.png"/>
+                                        <span class="tooltiptext">SpaCy</span>
+                                    </div>
+                                    <div class="tooltip">
+                                        <img class="small-square-img" src="images/icons/tech/ajax.png"/>
+                                        <span class="tooltiptext">Ajax</span>
+                                    </div>
+                                </div>
+                                
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->    
+
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="March 2017 – April 2023">
+                <div class="row">
+                    <div class="col-sm-1 col-xs-2 vtimeline-content__co_image">
+                        <img src="images/icons/mck.jpeg" />
+                    </div>
+                    <div class="col-sm-11 col-xs-10 vtimeline-content__co_title">
+                        <span>
+                            <h3>McKinsey & Company Inc - Waltham, MA</h3>
+                            <h4>Data Scientist/Finance Specialist</h4>
+                        </span>
+                    </div>
+                </div>                  
+                <p>
+                    Created unsupervised information extraction NLP model using Python and Universal Sentence Encoder on TensorFlow using Snowflake, Python, Flask, jQuery and D3.js.
+                    Created and maintained random forest and logistic regression based supervised learning models on R Studio and Python.
+                    Supervised, coordinated and lead discussions on various ad hoc data science discussions and prospective engagements using project management skills, Agile (with scrum) methodologies and tools such as Jira.
+                </p>
+            </div>
+
+            <div data-date="May 2012 – March 2017">
+                <div class="row">
+                    <div class="col-sm-1 col-xs-2 vtimeline-content__co_image">
+                        <img src="images/icons/gafg.jpeg" />
+                    </div>
+                    <div class="col-sm-11 col-xs-10 vtimeline-content__co_title">
+                        <span>
+                            <h3>Global Atlantic Financial Group - Boston, MA</h3>
+                            <h4>Associate - Risk, Planning and Analysis</h4>
+                        </span>
+                    </div>
+                </div>                 
+                <p>
+                    Prepared finance materials for CFO, monthly operating committee meetings, quarterly board and risk meetings and other ad-hoc projects, with timely analysis of various business lines for corporate finance decision making.
+                    Automated legacy Excel models using VBA Macro and SQL for planning, budgeting, and forecasting of short-term and long-term net income.
+                </p>
+            </div>
+
+            <div data-date="April 2007 – August 2010">
+                <div class="row">
+                    <div class="col-sm-1 col-xs-2 vtimeline-content__co_image">
+                        <img src="images/icons/gs.jpeg" />
+                    </div>
+                    <div class="col-sm-11 col-xs-10 vtimeline-content__co_title">
+                        <span>
+                            <h3>Goldman Sachs Inc. - New York, NY</h3>
+                            <h4>Senior Consultant Programmer</h4>
+                        </span>
+                    </div>
+                </div>                   
+                <p>
+                    Developed client-side portfolio management portal (http://360.gs.com) and various trading tools for Goldman Sachs Asset Management (GSAM) division using advanced Java, Unix, Perl, shell scripts, Sybase SQL and various open-source technologies.
+                    Designed and developed a real-time trading solution, as well as an advanced risk model, to assist the fixed-income trading desk with mortgage-backed security trading, portfolio tracking and performance monitoring tasks using IT tools.
+\                </p>
+            </div>
+
+            <div data-date="July 2004 – December 2007">
+                <div class="row">
+                    <div class="col-sm-1 col-xs-2 vtimeline-content__co_image">
+                        <img src="images/icons/sigma.jpeg" />
+                    </div>
+                    <div class="col-sm-11 col-xs-10 vtimeline-content__co_title">
+                        <span>
+                            <h3>Sigma Software Solutions - Pune, India</h3>
+                            <h4>Senior Software Developer</h4>
+                        </span>
+                    </div>
+                </div>                
+                <p>
+                    Lead 4-member offshore team on various order, revenue & customer management enterprise level technology initiatives using advanced Java, J2EE, Unix, MySQL, open-source tools (CVS, Apache Struts, JUnit, Hibernate ORM). 
+                    Developed, researched, and documented technical project artifacts and software design documents.
+                    Lead a “first in company” novel proof of concept of an end-to-end enterprise web-based system using Hibernate object relational mapping framework for an Africa based telecom client. Customer was highly appreciative of the effort and was engaged in long-term contract.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education" class="background-alt">
+        <h2 class="heading">Education</h2>
+        <div class="container">
+            <ul id="education-list" class="section-info" tabindex="-1">
+                <li class="education-entity">
+                    <div class="education-entity__header">
+                        <a
+                            target="_blank"
+                            href="https://www.ischool.berkeley.edu/"
+                            class="education-entity__member"
+                        >
+                            <img
+                                src="images/schools/uc-berkeley.png"
+                                alt="UC Berkeley"
+                            />
+                        </a>
+                    </div>
+                    <div class="education-entity__highlights">
+                        <div class="education-entity__text">
+                            <h3>University of California, Berkeley</h3>
+                            <h4>Master of Information and Data Science</h4>
+                            <p>
+                                <a
+                                    href="/resources/VB_SSR_TSRPT.pdf"
+                                    data-width="760px"
+                                    data-height="700px"
+                                    class="glightbox4"
+                                    >Course Transcript
+                                </a>
+                            </p>
+                        </div>
+                        <div class="education-entity__dates">
+                            September 2019 - August 2022
+                        </div>
+                    </div>
+                </li>
+                <li class="education-entity">
+                    <div class="education-entity__header">
+                        <a
+                            target="_blank"
+                            href="https://www.isenberg.umass.edu//"
+                            class="education-entity__member"
+                        >
+                            <img
+                                src="images/schools/umass-amherst.png"
+                                alt="U of I"
+                            />
+                        </a>
+                    </div>
+                    <div class="education-entity__highlights">
+                        <div class="education-entity__text">
+                            <h3>University of Massachusetts at Amherst</h3>
+                            <h4>Master of Business Administration</h4>
+                            <!-- <p>Dean's List</p> -->
+                        </div>
+                        <div class="education-entity__dates">
+                            August 2010 - May 2012
+                        </div>
+                    </div>
+                </li>
+                <li class="education-entity">
+                    <div class="education-entity__header">
+                        <a
+                            target="_blank"
+                            href="https://www.rgpv.ac.in//"
+                            class="education-entity__member"
+                        >
+                            <img
+                                src="images/schools/rgpv.png"
+                                alt="U of I"
+                            />
+                        </a>
+                    </div>
+                    <div class="education-entity__highlights">
+                        <div class="education-entity__text">
+                            <h3>Rajiv Gandhi Technological University of MP, India</h3>
+                            <h4>Bachelor of Engineering (Honors)</h4>
+                            <!-- <p>Dean's List</p> -->
+                        </div>
+                        <div class="education-entity__dates">
+                            August 2000 - June 2004
+                        </div>
+                    </div>
+                </li>                
+            </ul>
+        </div>
+    </div>
+    <!-- End #education -->
+
+
+    <!-- <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+            </p>
+        </div> -->
+        <!-- End .education-block -->
+
+        <!-- <div class="education-block">
+            <h3>University of Ottawa</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+            </ul>
+        </div> -->
+        <!-- End .education-block -->
+    <!-- </div> -->
+    <!-- End #education -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Machine Learning</li>
+            <li>NLP</li>            
+            <li>Node.js</li>
+            <li>React</li>
+            <li>jQuery/Ajax</li>            
+            <li>D3.js</li>
+            <li>Full stack</li>            
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Snowflake</li>
+            <li>AWS</li>
+            <li>Anaplan</li>
+            <li>PostGre</li>
+            <li>Unix</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <!-- <form method="POST" action="https://formspree.io/email@email.com"> -->
+            <form method="POST" action="https://form.jotform.com/230696780017056">                
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2023</span> VAIBHAV BEOHAR
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/vbeohar" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li> -->
+                        <li>
+                            <a href="https://www.linkedin.com/in/beohar/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
